@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thamaramkulangara Residence Association</title>
+    
+    <link rel="stylesheet" href="templatemo-glossy-touch.css">
+    <style>
+    .carousel {
+    position: relative;
+    width: 100%;         /* Make it full width */
+    max-width: 800px;    /* Max width (adjust as needed) */
+    margin: 0 auto;      /* Center the carousel */
+    overflow: hidden;    /* Hide the images that overflow */
+    border: 1px solid #ccc; /* Optional, border around carousel */
+    border-radius: 10px;  /* Optional, rounded corners */
+}
+
+/* Image container (carousel-images) */
+.carousel-images {
+    display: flex;        /* Align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    width: 100%;          /* Ensure the container takes full width */
+}
+
+.carousel-images img {
+    width: 100%;          /* Make each image take up the full width of the carousel */
+    height: auto;         /* Maintain aspect ratio */
+    object-fit: cover;    /* Crop and fill the container if necessary */
+}
+
+/* Navigation buttons */
+.buttons {
+    position: absolute;
+    top: 50%;             /* Position buttons vertically centered */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* Adjust position to be perfectly centered */
+}
+
+.buttons button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+/* Optional: Add focus state for accessibility */
+.buttons button:focus {
+    outline: none;
+}
+  </style>
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- SINGLE NAVIGATION HEADER -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Grid of circles with varying sizes -->
+                            <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                            <!-- Small accent dots -->
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                            <!-- Tiny corner dots -->
+                            <circle cx="8" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="8" cy="40" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="40" r="1" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <span style="font-size: 35px;font-family: 'Shadows Into Light', cursive;display: flex; justify-content: center; align-items: center;">Thamaramkulangara Residence Association</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active" style="font-family: 'Shadows Into Light', cursive;display: flex; justify-content: center; align-items: center;">Home</a>
+                    <a href="#" onclick="showPage('about')" style="font-family: 'Shadows Into Light', cursive;display: flex; justify-content: center; align-items: center;">About</a>
+                    <a href="#" onclick="showPage('gallery')" style="font-family: 'Shadows Into Light', cursive;display: flex; justify-content: center; align-items: center;">Gallery</a>
+                    <a href="#" onclick="showPage('team')" style="font-family: 'Shadows Into Light', cursive;display: flex; justify-content: center; align-items: center;">Team</a>
+                    <a href="#" onclick="showPage('updates')" style="font-family: 'Shadows Into Light', cursive;display: flex; justify-content: center; align-items: center;">News & Updates</a>
+                    <a href="#" onclick="showPage('contact')" style="font-family: 'Shadows Into Light', cursive;display: flex; justify-content: center; align-items: center;">Contact Us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="images/image-1.png" alt="Modern Technology Interaction" />
+                    </div>
+                    <div class="hero-content">
+                        <h1 style="font-family: 'Shadows Into Light', cursive;">Welcome to TRA</h1>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Building a Stronger Community Together</p>
+                        <a href="#" class="cta-button" onclick="showPage('about')">Learn More</a>
+                    </div>
+                </section>
+
+                <section class="features">
+                    <div class="feature-card glass">
+                        <div class="feature-icon">✨</div>
+                        <h3 style="font-family: 'Shadows Into Light', cursive;">Community Engagement</h3>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Organise social and cultural events for residents to come together and build lasting relationships.</p>
+                    </div>
+                    
+                    <div class="feature-card glass">
+                        <div class="feature-icon">✨</div>
+                        <h3 style="font-family: 'Shadows Into Light', cursive;">Safety and Security</h3>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Enhance the safety and security of our neighbourhood through joint initiatives and vigilance.</p>
+                    </div>
+                    
+                    <div class="feature-card glass">
+                        <div class="feature-icon">✨</div>
+                        <h3 style="font-family: 'Shadows Into Light', cursive;">Environmental Sustainability</h3>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Promote eco-friendly practices and maintain green spaces for the well-being of our community.</p>
+                    </div>
+                    <div></div>
+
+                    <div class="feature-card glass">
+                        <div class="feature-icon">✨</div>
+                        <h3 style="font-family: 'Shadows Into Light', cursive;">Infrastructure Development</h3>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Collaborate with local authorities to improve and maintain infrastructure like roads, water supply, and waste management.</p>
+                    </div>
+
+                    <!--<div class="carousel">
+  						<div class="carousel-images" id="carousel-images">
+    						<img src="images/templatemo-futuristic-girl.jpg" alt="Image 1"/>
+    						<img src="images/1000467478.jpg" alt="Image 3"/>
+  						</div>
+  						<div class="buttons">
+    						<button onclick="prevImage()">&#10094;</button>
+    						<button onclick="nextImage()">&#10095;</button>
+  						</div>
+					</div>-->
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2 style="font-family: 'Shadows Into Light', cursive;">About Us</h2>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Thamaramkulangara Residence Association (TRA)</strong> was formed in 2019 by residents of the Thamaramkulangara neighborhood, adjacent to the historic Thamaramkulangara Sree Dharmasastha Temple in Tripunithura, Ernakulam</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;">The <strong>Thamaramkulangara Residence Association (TRA)</strong> is a community-driven organization dedicated to fostering a spirit of cooperation, support, and development for the residents of Thamaramkulangara. Our mission is to create a harmonious living environment through collective efforts, effective communication, and mutual respect among all members of the association.</p>
+                    </div>
+                    <div class="about-text glass">
+                        <h2 style="font-family: 'Shadows Into Light', cursive;">Objective</h2>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Community Engagement</strong> : Organise social and cultural events for residents to come together and build lasting relationships.</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Safety and Security</strong> : Enhance the safety and security of our neighbourhood through joint initiatives and vigilance.</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Environmental Sustainability</strong> : Promote eco-friendly practices and maintain green spaces for the well-being of our community.</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Infrastructure Development</strong> : Collaborate with local authorities to improve and maintain infrastructure like roads, water supply, and waste management.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>About Us</h2>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Thamaramkulangara Residence Association (TRA) was formed in 2019 by residents of the Thamaramkulangara neighborhood, adjacent to the historic Thamaramkulangara Sree Dharmasastha Temple in Tripunithura, Ernakulam</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;">The Thamaramkulangara Residence Association (TRA) is a community-driven organization dedicated to fostering a spirit of cooperation, support, and development for the residents of Thamaramkulangara. Our mission is to create a harmonious living environment through collective efforts, effective communication, and mutual respect among all members of the association.</p>
+                    </div>
+                    <div class="about-text glass">
+                        <h2>Objective</h2>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Community Engagement</strong> : Organise social and cultural events for residents to come together and build lasting relationships.</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Safety and Security</strong> : Enhance the safety and security of our neighbourhood through joint initiatives and vigilance.</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Environmental Sustainability</strong> : Promote eco-friendly practices and maintain green spaces for the well-being of our community.</p>
+                        <p style="font-family: 'Shadows Into Light', cursive;"><strong>Infrastructure Development</strong> : Collaborate with local authorities to improve and maintain infrastructure like roads, water supply, and waste management.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <!-- TEAM PAGE -->
+    <div id="team" class="page">
+        <div class="container">
+
+                <section class="team-section">
+                    <h2 style="font-family: 'Shadows Into Light', cursive;">Meet Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member glass">
+                            <div class="team-avatar"><img src="images/president.jpeg" style="width: 130px; height: 130px; border-radius: 50%;" /></div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Dr. MK Muraleedharan Nair</h3>
+                            <p class="role" style="font-family: 'Shadows Into Light', cursive;">President</p>
+                            <p class="bio" style="font-family: 'Shadows Into Light', cursive;">+91 9447389926</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="Twitter">🐦</a>
+                            </div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar"><img src="images/vice_president.jpg" style="width: 110px; height: 110px; border-radius: 50%;" /></div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Sadasivan Pillai</h3>
+                            <p class="role" style="font-family: 'Shadows Into Light', cursive;">Vice President</p>
+                            <p class="bio" style="font-family: 'Shadows Into Light', cursive;">+91 9446720871</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="Portfolio">🎨</a>
+                            </div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar"><img src="images/vice_president_lady.jpg" style="width: 110px; height: 110px; border-radius: 50%;" /></div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Prathiba Krishnakumar</h3>
+                            <p class="role" style="font-family: 'Shadows Into Light', cursive;">Vice President</p>
+                            <p class="bio" style="font-family: 'Shadows Into Light', cursive;">+91 9747480888</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="GitHub">💻</a>
+                            </div>
+                        </div>
+                        <div class="team-member glass">
+                           <div class="team-avatar"><img src="images/secretary.jpg" style="width: 110px; height: 110px; border-radius: 50%;" /></div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Santhosh Kumar</h3>
+                            <p class="role" style="font-family: 'Shadows Into Light', cursive;">Secretary</p>
+                            <p class="bio" style="font-family: 'Shadows Into Light', cursive;">+91 9847512595</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="GitHub">💻</a>
+                            </div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar"><img src="images/joint_secretary.jpeg" style="width: 110px; height: 110px; border-radius: 50%;" /></div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Sreejith VS</h3>
+                            <p class="role" style="font-family: 'Shadows Into Light', cursive;">Joint Secretary</p>
+                            <p class="bio" style="font-family: 'Shadows Into Light', cursive;">+91 9946622922</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="Behance">🎨</a>
+                            </div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar"><img src="images/treasurer.jpg" style="width: 110px; height: 110px; border-radius: 50%;" /></div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Anil Kumar</h3>
+                            <p class="role" style="font-family: 'Shadows Into Light', cursive;">Treasurer</p>
+                            <p class="bio" style="font-family: 'Shadows Into Light', cursive;">+91 9846689350</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="Calendar">📅</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="updates" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1 style="font-family: 'Shadows Into Light', cursive;">News & Updates</h1>
+                    <p style="font-family: 'Shadows Into Light', cursive;">Latest News and upcoming events</p>
+                </section>
+
+                <section class="services-grid">
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🎨</div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Upcoming Events</h3>
+                        </div>
+                        <ul class="service-features">
+                            <li style="font-family: 'Shadows Into Light', cursive;">September 7th 2025 - Onam Celebration</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                             <div class="service-icon">🎨</div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Notices</h3>
+                        </div>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Stay updated on important announcements, maintenance schedules, and neighborhood alerts.</p>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🎨</div>
+                            <h3 style="font-family: 'Shadows Into Light', cursive;">Newsletters</h3>
+                        </div>
+                        <p style="font-family: 'Shadows Into Light', cursive;">Access our monthly newsletters to learn more about recent activities and future plans.</p>
+                    </div>
+
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2 style="font-family: 'Shadows Into Light', cursive;">Get In Touch</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name" style="font-family: 'Shadows Into Light', cursive;">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" style="font-family: 'Shadows Into Light', cursive;">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" style="font-family: 'Shadows Into Light', cursive;">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" style="font-family: 'Shadows Into Light', cursive;">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info glass">
+                        <h2 style="font-family: 'Shadows Into Light', cursive;">Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4 style="font-family: 'Shadows Into Light', cursive;">Email</h4>
+                                <p style="font-family: 'Shadows Into Light', cursive;">tratripunithura2019@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div class="contact-item-text">
+                                <h4 style="font-family: 'Shadows Into Light', cursive;">Phone</h4>
+                                <p style="font-family: 'Shadows Into Light', cursive;">0484-2222222</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-text">
+                                <h4 style="font-family: 'Shadows Into Light', cursive;">Address</h4>
+                                <p style="font-family: 'Shadows Into Light', cursive;">Thamaramkulangara, <br>Tripunithura</br>Ernakulam, <br>682301</br></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="contact-map-section">
+                    <div class="contact-map glass">
+                        <h2 style="font-family: 'Shadows Into Light', cursive;">Find Us</h2>
+                        <div class="map-container">
+                            <iframe
+  								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.7873254549727!2d76.3359683748322!3d9.9516451901513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0872cb7a9ceb97%3A0xca52c1cf661b0628!2sThamaramkulangara%20Sree%20Dharmasastha%20Temple!5e0!3m2!1sen!2sin!4v1753692872046!5m2!1sen!2sin"
+  								width="1400"
+  								height="500"
+  								style="border:0;"
+  								allowfullscreen=""
+  								loading="lazy"
+  								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+   
+    <div id="gallery" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                    <div class="carousel">
+  						<div class="carousel-images" id="carousel-images">
+    						<img src="images/0.jpg" alt="Image 1"/>
+    						<img src="images/2.jpg" alt="Image 3"/>
+    						<img src="images/1.jpg" alt="Image 3"/>
+    						<img src="images/3.jpg" alt="Image 3"/>
+    						<img src="images/4.jpg" alt="Image 3"/>
+    						<img src="images/5.jpg" alt="Image 3"/>
+    						<img src="images/6.jpg" alt="Image 3"/>
+    						<img src="images/7.jpg" alt="Image 3"/>
+    						<img src="images/8.jpg" alt="Image 3"/>
+  						</div>
+  						<div class="buttons">
+    						<button onclick="prevImage()">&#10094;</button>
+    						<button onclick="nextImage()">&#10095;</button>
+  						</div>
+					</div>
+                
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- SINGLE FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="#" onclick="showPage('about')" style="font-family: 'Shadows Into Light', cursive;">About Us</a>
+                        <a href="#" style="font-family: 'Shadows Into Light', cursive;">Privacy Policy</a>
+                        <a href="#" style="font-family: 'Shadows Into Light', cursive;">Terms of Service</a>
+                        <a href="#" onclick="showPage('contact')" style="font-family: 'Shadows Into Light', cursive;">Contact</a>
+                    </div>
+                    <div class="copyright" style="font-family: 'Shadows Into Light', cursive;">
+                        &copy; 2025 Thamaramkulangara Residence Association. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="templatemo-glossy-touch.js">
+
+</script>
+</body>
+</html>
